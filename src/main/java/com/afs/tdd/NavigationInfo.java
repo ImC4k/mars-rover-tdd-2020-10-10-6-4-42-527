@@ -27,6 +27,7 @@ public class NavigationInfo {
         switch (this.direction) {
             case "S": --locationY; break;
             case "E": ++locationX; break;
+            case "W": --locationX; break;
             default: ++locationY;
         }
     }
