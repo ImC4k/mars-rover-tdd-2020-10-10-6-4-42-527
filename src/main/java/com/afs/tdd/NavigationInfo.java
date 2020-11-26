@@ -28,6 +28,6 @@ public class NavigationInfo {
     }
 
     public void rotateLeft() {
-        this.direction = "E";
+        this.direction = "W";
     }
 }

@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class NavigationInfoTest {
 
     @Test
-    public void should_return_E_when_rotateLeft_given_N() {
+    public void should_return_W_when_rotateLeft_given_N() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "N");
 
@@ -15,7 +15,7 @@ public class NavigationInfoTest {
         navigationInfo.rotateLeft();
 
         //then
-        assertEquals("E", navigationInfo.getDirection());
+        assertEquals("W", navigationInfo.getDirection());
     }
 
 }
