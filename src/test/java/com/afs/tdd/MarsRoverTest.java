@@ -77,4 +77,18 @@ class MarsRoverTest {
         assertEquals(0, actual.getY());
         assertEquals("N", actual.getDirection());
     }
+
+    @Test
+    public void should_return_0_0_S_when_executeCommands_given_0_0_E_and_R() {
+        //given
+        MarsRover marsRover = new MarsRover(0, 0, "E");
+
+        //when
+        NavigationInfo actual = marsRover.executeCommands(Stream.of("R").collect(Collectors.toList()));
+
+        //then
+        assertEquals(0, actual.getX());
+        assertEquals(0, actual.getY());
+        assertEquals("S", actual.getDirection());
+    }
 }
