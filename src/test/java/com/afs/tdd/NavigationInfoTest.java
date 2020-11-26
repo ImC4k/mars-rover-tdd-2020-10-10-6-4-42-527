@@ -30,4 +30,16 @@ public class NavigationInfoTest {
         assertEquals("E", navigationInfo.getDirection());
     }
 
+    @Test
+    public void should_return_N_when_rotateLeft_given_E() {
+        //given
+        NavigationInfo navigationInfo = new NavigationInfo(0, 0, "E");
+
+        //when
+        navigationInfo.rotateRight();
+
+        //then
+        assertEquals("N", navigationInfo.getDirection());
+    }
+
 }
