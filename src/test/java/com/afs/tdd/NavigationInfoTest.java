@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class NavigationInfoTest {
+class NavigationInfoTest {
 
     @Test
-    public void should_return_W_when_rotateLeft_given_N() {
+    void should_return_W_when_rotateLeft_given_N() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "N");
 
@@ -19,7 +19,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_E_when_rotateRight_given_N() {
+    void should_return_E_when_rotateRight_given_N() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "N");
 
@@ -31,7 +31,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_N_when_rotateLeft_given_E() {
+    void should_return_N_when_rotateLeft_given_E() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "E");
 
@@ -43,7 +43,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_S_when_rotateRight_given_E() {
+    void should_return_S_when_rotateRight_given_E() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "E");
 
@@ -55,7 +55,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_E_when_rotateLeft_given_S() {
+    void should_return_E_when_rotateLeft_given_S() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "S");
 
@@ -67,7 +67,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_W_when_rotateRight_given_S() {
+    void should_return_W_when_rotateRight_given_S() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "S");
 
@@ -79,7 +79,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_S_when_rotateLeft_given_W() {
+    void should_return_S_when_rotateLeft_given_W() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "W");
 
@@ -91,7 +91,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_N_when_rotateRight_given_W() {
+    void should_return_N_when_rotateRight_given_W() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "W");
 
@@ -103,7 +103,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_0_1_N_when_moveOneSpace_given_0_0_N() {
+    void should_return_0_1_N_when_moveOneSpace_given_0_0_N() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "N");
 
@@ -117,7 +117,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_0_negative1_S_when_moveOneSpace_given_0_0_S() {
+    void should_return_0_negative1_S_when_moveOneSpace_given_0_0_S() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "S");
 
@@ -131,7 +131,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_1_0_E_when_moveOneSpace_given_0_0_E() {
+    void should_return_1_0_E_when_moveOneSpace_given_0_0_E() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "E");
 
@@ -145,7 +145,7 @@ public class NavigationInfoTest {
     }
 
     @Test
-    public void should_return_negative1_0_E_when_moveOneSpace_given_0_0_W() {
+    void should_return_negative1_0_E_when_moveOneSpace_given_0_0_W() {
         //given
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "W");
 

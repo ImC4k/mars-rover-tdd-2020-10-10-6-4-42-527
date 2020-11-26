@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MarsRoverTest {
     @Test
-    public void should_return_0_1_N_when_executeCommands_given_0_0_N_and_M() {
+    void should_return_0_1_N_when_executeCommands_given_0_0_N_and_M() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "N");
 
@@ -23,7 +23,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_0_W_when_executeCommands_given_0_0_N_and_L() {
+    void should_return_0_0_W_when_executeCommands_given_0_0_N_and_L() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "N");
 
@@ -37,7 +37,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_0_E_when_executeCommands_given_0_0_N_and_R() {
+    void should_return_0_0_E_when_executeCommands_given_0_0_N_and_R() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "N");
 
@@ -51,7 +51,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_1_0_E_when_executeCommands_given_0_0_E_and_M() {
+    void should_return_1_0_E_when_executeCommands_given_0_0_E_and_M() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "E");
 
@@ -65,7 +65,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_0_N_when_executeCommands_given_0_0_E_and_L() {
+    void should_return_0_0_N_when_executeCommands_given_0_0_E_and_L() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "E");
 
@@ -79,7 +79,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_0_S_when_executeCommands_given_0_0_E_and_R() {
+    void should_return_0_0_S_when_executeCommands_given_0_0_E_and_R() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "E");
 
@@ -93,7 +93,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_negative0_S_when_executeCommands_given_0_0_S_and_M() {
+    void should_return_0_negative0_S_when_executeCommands_given_0_0_S_and_M() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "S");
 
@@ -107,7 +107,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_0_E_when_executeCommands_given_0_0_S_and_L() {
+    void should_return_0_0_E_when_executeCommands_given_0_0_S_and_L() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "S");
 
@@ -121,7 +121,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_0_W_when_executeCommands_given_0_0_S_and_R() {
+    void should_return_0_0_W_when_executeCommands_given_0_0_S_and_R() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "S");
 
@@ -135,7 +135,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_negative0_0_W_when_executeCommands_given_0_0_W_and_M() {
+    void should_return_negative0_0_W_when_executeCommands_given_0_0_W_and_M() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "W");
 
@@ -149,7 +149,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_0_S_when_executeCommands_given_0_0_W_and_L() {
+    void should_return_0_0_S_when_executeCommands_given_0_0_W_and_L() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "W");
 
@@ -163,7 +163,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_0_N_when_executeCommands_given_0_0_W_and_R() {
+    void should_return_0_0_N_when_executeCommands_given_0_0_W_and_R() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "W");
 
@@ -177,7 +177,7 @@ class MarsRoverTest {
     }
 
     @Test
-    public void should_return_0_0_N_when_executeCommands_given_0_0_N_and_MLMR() {
+    void should_return_0_0_N_when_executeCommands_given_0_0_N_and_MLMR() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "N");
 
