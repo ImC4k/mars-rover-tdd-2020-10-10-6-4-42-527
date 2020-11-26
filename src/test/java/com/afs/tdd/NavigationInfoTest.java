@@ -101,4 +101,19 @@ public class NavigationInfoTest {
         //then
         assertEquals("N", navigationInfo.getDirection());
     }
+
+    @Test
+    public void should_return_0_1_N_when_moveOneSpace_given_0_0_N() {
+        //given
+        NavigationInfo navigationInfo = new NavigationInfo(0, 0, "N");
+
+        //when
+        navigationInfo.moveOneSpace();
+
+        //then
+        assertEquals("N", navigationInfo.getDirection());
+        assertEquals(0, navigationInfo.getX());
+        assertEquals(1, navigationInfo.getY());
+    }
+
 }
