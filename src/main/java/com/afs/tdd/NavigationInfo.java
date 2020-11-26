@@ -30,4 +30,7 @@ public class NavigationInfo {
     public void rotateLeft() {
         this.direction = "W";
     }
+
+    public void rotateRight() {
+    }
 }
