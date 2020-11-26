@@ -36,7 +36,7 @@ public class NavigationInfoTest {
         NavigationInfo navigationInfo = new NavigationInfo(0, 0, "E");
 
         //when
-        navigationInfo.rotateRight();
+        navigationInfo.rotateLeft();
 
         //then
         assertEquals("N", navigationInfo.getDirection());
