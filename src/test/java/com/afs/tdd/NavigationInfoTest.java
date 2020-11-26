@@ -66,4 +66,15 @@ public class NavigationInfoTest {
         assertEquals("E", navigationInfo.getDirection());
     }
 
+    @Test
+    public void should_return_W_when_rotateRight_given_S() {
+        //given
+        NavigationInfo navigationInfo = new NavigationInfo(0, 0, "S");
+
+        //when
+        navigationInfo.rotateRight();
+
+        //then
+        assertEquals("W", navigationInfo.getDirection());
+    }
 }
