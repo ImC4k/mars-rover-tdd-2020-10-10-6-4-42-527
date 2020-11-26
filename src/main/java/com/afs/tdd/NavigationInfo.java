@@ -26,4 +26,8 @@ public class NavigationInfo {
     public void moveOneSpace() {
         ++locationY;
     }
+
+    public void rotateLeft() {
+
+    }
 }
