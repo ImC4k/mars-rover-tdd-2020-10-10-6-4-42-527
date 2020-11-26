@@ -24,7 +24,10 @@ public class NavigationInfo {
     }
 
     public void moveOneSpace() {
-        ++locationY;
+        switch (this.direction) {
+            case "S": --locationY; break;
+            default: ++locationY;
+        }
     }
 
     public void rotateLeft() {
