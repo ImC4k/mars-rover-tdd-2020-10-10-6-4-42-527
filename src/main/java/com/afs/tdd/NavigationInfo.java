@@ -12,7 +12,7 @@ public class NavigationInfo {
     }
 
     public int getX() {
-        return 0;
+        return this.locationX;
     }
 
     public int getY() {
@@ -26,6 +26,7 @@ public class NavigationInfo {
     public void moveOneSpace() {
         switch (this.direction) {
             case "S": --locationY; break;
+            case "E": ++locationX; break;
             default: ++locationY;
         }
     }
