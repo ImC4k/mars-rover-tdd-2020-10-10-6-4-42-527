@@ -116,4 +116,18 @@ public class NavigationInfoTest {
         assertEquals(1, navigationInfo.getY());
     }
 
+    @Test
+    public void should_return_0_negative1_S_when_moveOneSpace_given_0_0_S() {
+        //given
+        NavigationInfo navigationInfo = new NavigationInfo(0, 0, "S");
+
+        //when
+        navigationInfo.moveOneSpace();
+
+        //then
+        assertEquals("S", navigationInfo.getDirection());
+        assertEquals(0, navigationInfo.getX());
+        assertEquals(-1, navigationInfo.getY());
+    }
+
 }
