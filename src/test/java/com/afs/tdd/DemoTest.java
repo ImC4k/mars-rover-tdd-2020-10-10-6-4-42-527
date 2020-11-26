@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MarsRoverTest {
     @Test
-    public void should_return_y_plus_1_when_executeCommands_given_0_0_N_and_M() {
+    public void should_return_0_1_N_when_executeCommands_given_0_0_N_and_M() {
         //given
         MarsRover marsRover = new MarsRover(0, 0, "N");
 
