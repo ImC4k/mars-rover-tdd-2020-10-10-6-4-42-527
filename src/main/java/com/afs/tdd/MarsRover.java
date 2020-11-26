@@ -3,7 +3,10 @@ package com.afs.tdd;
 import java.util.List;
 
 public class MarsRover {
-    private NavigationInfo navigationInfo;
+    public static final String LEFT = "L";
+    public static final String RIGHT = "R";
+    private final NavigationInfo navigationInfo;
+    
     public MarsRover(int locationX, int locationY, String direction) {
         this.navigationInfo = new NavigationInfo(locationX, locationY, direction);
     }
@@ -15,8 +18,8 @@ public class MarsRover {
 
     private void executeCommand(String command) {
         switch (command) {
-            case "L": navigationInfo.rotateLeft(); break;
-            case "R": navigationInfo.rotateRight(); break;
+            case LEFT: navigationInfo.rotateLeft(); break;
+            case RIGHT: navigationInfo.rotateRight(); break;
             default: navigationInfo.moveOneSpace();
         }
     }

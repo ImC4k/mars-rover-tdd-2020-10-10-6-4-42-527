@@ -1,6 +1,10 @@
 package com.afs.tdd;
 
 public class NavigationInfo {
+    public static final String SOUTH = "S";
+    public static final String EAST = "E";
+    public static final String WEST = "W";
+    public static final String NORTH = "N";
     int locationX;
     int locationY;
     String direction;
@@ -25,28 +29,28 @@ public class NavigationInfo {
 
     public void moveOneSpace() {
         switch (this.direction) {
-            case "S": --locationY; break;
-            case "E": ++locationX; break;
-            case "W": --locationX; break;
+            case SOUTH: --locationY; break;
+            case EAST: ++locationX; break;
+            case WEST: ++locationX; break;
             default: ++locationY;
         }
     }
 
     public void rotateLeft() {
         switch (this.direction) {
-            case "N": this.direction = "W"; break;
-            case "S": this.direction = "E"; break;
-            case "W": this.direction = "S"; break;
-            default: this.direction = "N";
+            case NORTH: this.direction = WEST; break;
+            case SOUTH: this.direction = EAST; break;
+            case WEST: this.direction = SOUTH; break;
+            default: this.direction = NORTH;
         }
     }
 
     public void rotateRight() {
         switch (this.direction) {
-            case "N": this.direction = "E"; break;
-            case "S": this.direction = "W"; break;
-            case "W": this.direction = "N"; break;
-            default: this.direction = "S";
+            case NORTH: this.direction = EAST; break;
+            case SOUTH: this.direction = WEST; break;
+            case WEST: this.direction = NORTH; break;
+            default: this.direction = SOUTH;
         }
     }
 }
