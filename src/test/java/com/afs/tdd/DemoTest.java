@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class DemoTest {
+class MarsRoverTest {
     @Test
     public void should_return_y_plus_1_when_executeCommands_given_0_0_N_and_M() {
         //given
