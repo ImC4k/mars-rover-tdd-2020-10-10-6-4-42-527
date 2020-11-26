@@ -14,7 +14,7 @@ class MarsRoverTest {
         MarsRover marsRover = new MarsRover(0, 0, "N");
 
         //when
-        NavigationMeta actual = marsRover.executeCommands(Stream.of("M").collect(Collectors.toList()));
+        NavigationInfo actual = marsRover.executeCommands(Stream.of("M").collect(Collectors.toList()));
 
         //then
         assertEquals(0, actual.getX());

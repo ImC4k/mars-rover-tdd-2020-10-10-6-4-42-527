@@ -1,11 +1,11 @@
 package com.afs.tdd;
 
-public class NavigationMeta {
+public class NavigationInfo {
     int locationX;
     int locationY;
     String direction;
 
-    public NavigationMeta(int locationX, int locationY, String direction) {
+    public NavigationInfo(int locationX, int locationY, String direction) {
         this.locationX = locationX;
         this.locationY = locationY;
         this.direction = direction;
