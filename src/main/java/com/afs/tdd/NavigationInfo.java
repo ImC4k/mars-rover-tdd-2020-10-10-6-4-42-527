@@ -38,6 +38,7 @@ public class NavigationInfo {
     public void rotateRight() {
         switch (this.direction) {
             case "N": this.direction = "E"; break;
+            case "S": this.direction = "W"; break;
             default: this.direction = "S";
         }
     }
