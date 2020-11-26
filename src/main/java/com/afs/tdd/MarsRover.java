@@ -16,6 +16,7 @@ public class MarsRover {
     private void executeCommand(String command) {
         switch (command) {
             case "L": navigationInfo.rotateLeft(); break;
+            case "R": navigationInfo.rotateRight(); break;
             default: navigationInfo.moveOneSpace();
         }
     }
