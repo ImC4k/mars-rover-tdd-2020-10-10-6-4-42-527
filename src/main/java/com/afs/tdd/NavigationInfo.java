@@ -40,6 +40,7 @@ public class NavigationInfo {
         switch (this.direction) {
             case "N": this.direction = "E"; break;
             case "S": this.direction = "W"; break;
+            case "W": this.direction = "N"; break;
             default: this.direction = "S";
         }
     }
