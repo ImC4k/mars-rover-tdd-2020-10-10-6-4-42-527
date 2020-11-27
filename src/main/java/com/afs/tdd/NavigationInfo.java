@@ -1,13 +1,13 @@
 package com.afs.tdd;
 
 public class NavigationInfo {
-    public static final String SOUTH = "S";
-    public static final String EAST = "E";
-    public static final String WEST = "W";
-    public static final String NORTH = "N";
-    int locationX;
-    int locationY;
-    String direction;
+    private static final String SOUTH = "S";
+    private static final String EAST = "E";
+    private static final String WEST = "W";
+    private static final String NORTH = "N";
+    private int locationX;
+    private int locationY;
+    private String direction;
 
     public NavigationInfo(int locationX, int locationY, String direction) {
         this.locationX = locationX;

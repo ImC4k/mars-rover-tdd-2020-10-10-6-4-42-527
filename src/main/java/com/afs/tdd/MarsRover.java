@@ -3,9 +3,9 @@ package com.afs.tdd;
 import java.util.List;
 
 public class MarsRover {
-    public static final String LEFT = "L";
-    public static final String RIGHT = "R";
-    public static final String MOVE = "M";
+    private static final String LEFT = "L";
+    private static final String RIGHT = "R";
+    private static final String MOVE = "M";
     private final NavigationInfo navigationInfo;
 
     public MarsRover(int locationX, int locationY, String direction) {
