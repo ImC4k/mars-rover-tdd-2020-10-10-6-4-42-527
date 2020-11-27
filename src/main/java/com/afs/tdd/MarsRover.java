@@ -5,8 +5,9 @@ import java.util.List;
 public class MarsRover {
     public static final String LEFT = "L";
     public static final String RIGHT = "R";
+    public static final String MOVE = "M";
     private final NavigationInfo navigationInfo;
-    
+
     public MarsRover(int locationX, int locationY, String direction) {
         this.navigationInfo = new NavigationInfo(locationX, locationY, direction);
     }
@@ -20,7 +21,8 @@ public class MarsRover {
         switch (command) {
             case LEFT: navigationInfo.rotateLeft(); break;
             case RIGHT: navigationInfo.rotateRight(); break;
-            default: navigationInfo.moveOneSpace();
+            case MOVE: navigationInfo.moveOneSpace(); break;
+            default:
         }
     }
 }

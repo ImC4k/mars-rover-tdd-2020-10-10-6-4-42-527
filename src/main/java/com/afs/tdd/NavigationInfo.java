@@ -29,28 +29,31 @@ public class NavigationInfo {
 
     public void moveOneSpace() {
         switch (this.direction) {
+            case NORTH: ++locationY; break;
             case SOUTH: --locationY; break;
             case EAST: ++locationX; break;
             case WEST: --locationX; break;
-            default: ++locationY;
+            default:
         }
     }
 
     public void rotateLeft() {
         switch (this.direction) {
             case NORTH: this.direction = WEST; break;
+            case EAST: this.direction = NORTH; break;
             case SOUTH: this.direction = EAST; break;
             case WEST: this.direction = SOUTH; break;
-            default: this.direction = NORTH;
+            default:
         }
     }
 
     public void rotateRight() {
         switch (this.direction) {
             case NORTH: this.direction = EAST; break;
+            case EAST: this.direction = SOUTH; break;
             case SOUTH: this.direction = WEST; break;
             case WEST: this.direction = NORTH; break;
-            default: this.direction = SOUTH;
+            default:
         }
     }
 }
